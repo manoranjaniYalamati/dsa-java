@@ -1,0 +1,57 @@
+----- STOCK BUY AND SELL -----
+
+
+APPROACH         -   TC          -   SC
+
+BRUTEFORCE  -   O(N^2)      -   O(1)
+GREEDY      -   O(N)        -   O(1)
+
+
+
+----- ROUGH NOTES WHILE BRAIN STORMING ----
+
+if list in descending order, no profit can be made
+
+if list in ascending order, profit - a[n]-a[0]
+
+
+APPROACH 1 -
+[7,1,5,3,6,4]
+
+total maxprof = 0;
+iterate for each element - take one and consider that u bought on that day
+	maxprof = 0
+	iterate for i+1 - see the num and see if this prof is > max prof. ( we dont need to check previous ones as its invalid to sell before its bought)
+		reasign max prof
+	totalmaxprof = maxprof > totalmaxprof ? maxprof : totalmaxprof
+
+
+APPROACH 2 -
+[7,1,5,3,6,4]
+
+total maxprof = 0;
+initial buy point = arr[0]
+iterate from index 1 -
+	if arr[i] < initial buy point
+			initial buy point = arr[i]
+	else
+		 total maxprof = arr[i] - initial buy point > total maxprof ? arr[i] - initial buy point : total maxprof
+return total maxprof
+
+
+
+it 2
+initial buy point = 1
+total maxprof = 4
+
+it 3
+initial buy point = 1
+total maxprof = 4
+
+It4
+initial buy point = 1
+total max prof = 5
+
+IT5
+initial buy point = 1
+total max prof = 5

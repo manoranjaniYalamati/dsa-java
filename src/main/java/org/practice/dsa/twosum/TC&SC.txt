@@ -1,0 +1,8 @@
+----- TWO SUM -----
+
+
+APPROACH         -   TC          -   SC
+
+BRUTEFORCE  -   O(N^2)      -   O(1)
+HASHMAP     -   O(N)        -   O(N)
+TWO POINTER -   O(N Log N)  -   O(N)
