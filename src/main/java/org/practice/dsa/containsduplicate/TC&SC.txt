@@ -1,0 +1,19 @@
+----- CONTAINS DUPLICATE  I -----
+
+
+APPROACH         -   TC          -   SC
+BRUTEFORCE  -   O(N^2)      -   O(1)
+SORT        -   O(NLOGN)    -   O(1)
+HASHMAP     -   O(N)        -   O(N)
+SET         -   O(N)        -   O(N)
+
+
+----- CONTAINS DUPLICATE  II -----
+
+
+APPROACH         -   TC          -   SC
+
+BRUTEFORCE  -   O(N^2)      -   O(1)
+HASHMAP      -   O(N)        -   O(N)
+SLIDING WINDOW  -  O(N)       - O(K)
+
